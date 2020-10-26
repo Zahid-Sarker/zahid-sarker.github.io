@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <title>Fruit Game</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+        <link rel="stylesheet" href="styleSheet.css">
+        
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+        
+    </head>
+    
+    <body>
+        <div id="container">
+            <div id="trialsLeft">
+            </div>
+            
+            <div id="score">
+                Score: <span id="value">0</span>
+            </div>
+            
+            <div id="fruitContainer">
+                <img id="fruit" class="fruits">
+            </div>
+            
+            <div id="hint">
+                Swipe to catch the fruits
+            </div>
+            
+            <div id="start">
+                <p>Start Game</p>
+            </div>
+            
+            <div id="reset">
+                Reset Game
+            </div>
+            
+            <div id="gameover">
+                <p>Game Over!</p>
+                <p>Your score is <span id="scoreValue"></span>.</p>
+            </div>
+            <audio id="sound">
+                <source src="audio/slicefruit.mp3">
+                <source src="audio/slicefruit.ogg">
+            </audio>
+            <audio id="bomb">
+                <source src="audio/bomb.mp3">
+            </audio>
+            <audio id="chicken">
+                <source src="audio/chicken.wav">
+            </audio>
+        </div>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        
+        <script type="text/javascript" src="jQUERY.js"></script>
+    </body>
+</html>
