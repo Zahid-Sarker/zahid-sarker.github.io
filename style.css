@@ -1,0 +1,83 @@
+#code-editor {
+    width: 45%;
+    float: left;
+}
+#logo {
+    margin-top: 20px;
+    border-radius: 10px;
+}
+#drawing-board {
+    width: 54%;
+    float: right;
+}
+#input-container {
+    width: 100px;
+    margin-left: 45.5%;
+    margin-top: 35%;
+    position: absolute;
+}
+#eraser-container {
+    margin-left: 90%;
+    margin-top: 35%;
+    position: absolute;
+}
+#pencil {
+    margin-left: 20px;
+    cursor: pointer;
+    background-color: rgb(192, 86, 86);
+    border-radius: 2px;
+}
+#pen-size, #eraser-slider {
+    margin-top: 5px;
+    margin-left: 10px;
+    height: 10px;
+    width: 100px;
+}
+#color-input {
+    margin-top: 10px;
+    margin-right: 20px;
+}
+#eraser-slider {
+    margin-top: 5px;
+}
+#eraser {
+    margin-left: 5px;
+}
+#circle {
+    height: 3px;
+    width: 3px;
+    border-radius: 50%;
+    margin: 10px auto;
+    background-color: black;
+}
+#eraser-circle {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin: 10px auto;
+    border: 2px dashed rgb(99, 90, 80);
+}
+#canvas {
+    position: absolute;
+    margin-top: 18px;
+    margin-left: 30px;
+    cursor: crosshair;
+    float: right;
+}
+#instruction {
+    position: absolute;
+    height: 60px;
+    width: 300px;
+    background-color: red;
+    margin-left: 62%;
+    margin-top: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    display: none;
+}
+#instruction p {
+    margin: 3px;
+    font-size: 14px;
+}
