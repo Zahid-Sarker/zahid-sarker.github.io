@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: linear-gradient(to right, rgba(22, 27, 49, 0.8), rgb(33, 46, 102));
+    --secondary-color: repeating-linear-gradient(to right, rgb(62, 62, 134), rgb(50, 50, 204));
+    --hover-color: linear-gradient(to right, rgb(224, 125, 125), rgb(206, 81, 81), rgb(224, 125, 125));
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Utility class */
+.b-r {
+    border-right: 1px solid #e3e3e3;
+}
+
+.m-r {
+    margin-right: 1rem;
+}
+
+
+
+/* Header */
+header {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--primary-color);
+}
+
+header .logo {
+    margin-left: 30px;
+    font-family: 'Corinthia', cursive;
+}
+
+header .nav ul {
+    display: flex;
+    margin-right: 10px;
+}
+
+header .nav ul li a {
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+header .nav ul li a:hover {
+    background: var(--hover-color);
+}
+
+/* Body */
+
+body {
+    background: var(--secondary-color);
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 100px 0;
+    gap: 20px;
+}
+
+.container .project {
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+    background: var(--primary-color);
+    box-shadow: 10px 10px 10px #333;
+}
+
+.container .project2, .container .project3 {
+    background: rgb(143, 81, 93);
+}
+
+.container .project:hover {
+    box-shadow: 15px 15px 15px rgba(22, 27, 49, 0.8);
+}
+
+.container .project img {
+    width: 300px;
+    height: 255px;
+    padding: 3px 3px 0 3px;
+    border-radius: 5px;
+}
+
+.container .project a {
+    display: block;
+}
+
+.container .project a button {
+    width: 98%;
+    padding: 10px;
+    text-align: center;
+    margin: 0 3px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.container .project a button:hover {
+    background: var(--hover-color);
+}
+
+/* .container .project1 button {
+    display: block;
+    padding: 10px;
+} */
+
+/* Footer */
+footer {
+    display: flex;
+    background: var(--primary-color);
+    position: fixed;
+    width: 100%;
+    height: 40px;
+    left: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    /* display: none; */
+}
+
+footer p{
+    color: #e3e3e3;
+    padding-right: 10px;
+    border-right: 1px solid #fff;
+}
+
+footer a {
+    color: #acacac;
+    margin-left: 10px;
+    padding: 5px;
+    border: 1px solid #acacac;
+}
+
+footer a:hover {
+    background: var(--hover-color);
+}
+
+/* Contact */
+.contact {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 0;
+}
+.card {
+    width: 230px;
+    height: 200px;
+    padding: 50px 10px;
+    text-align: center;
+    background: rgba(51, 51, 51, 0.2);
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px blue;
+    color: #fff;
+}
+.contact img {
+    height: 50px;
+    width: 50px;
+}
+
+.me {
+    color: crimson;
+}
+
+/* About */
+.about {
+    margin: 20px;
+    color: #e3e3e3;
+}
+.about a {
+    padding: 10px;
+    background: var(--hover-color);
+}
+
+/* Credit */
+.credit-detail {
+    margin: 20px;
+    width: 400px;
+    padding: 20px;
+    background: rgba(51, 51, 51, 0.2);
+}
+
+.credit-detail li {
+    list-style: circle;
+    margin-top: 10px;
+}

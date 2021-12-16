@@ -1,0 +1,194 @@
+html{
+    height: 100%;
+    background: radial-gradient(circle, #e82611, #ccc);
+}
+
+#container{
+    height: 400px;
+    width: 600px;
+    background-color: #dbb7d6;
+    margin: 120px auto;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px 10px #8b3681;/*horizontal vertical blur spread(optional) color*/
+    position: relative;
+}
+
+#score{
+    background-color: #F1FF92;
+    color: #888E5F;
+    padding: 10px;
+    position: absolute;
+    margin-left: 530px;
+    border-radius: 5px;
+    box-shadow: 0px 3px 0px 0px #9e9b04;
+}
+
+#correct{
+    position: absolute;
+    left: 280px;
+    top: 25px;
+    background-color: Green;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 3px 0px 0px #32991e;
+    visibility: hidden;
+}
+
+#wrong{
+    position: absolute;
+    left: 280px;
+    top: 25px;
+    background-color: Red;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 3px 0px 0px #820c0c;
+    visibility: hidden;
+}
+
+#question{
+    width: 400px;
+    height: 150px;
+    background-color: #a7faf1;
+    border-radius: 10px;
+    margin: 60px auto;
+    margin-bottom: 10px;
+    box-shadow: 0px 3px 10px 0px #2bb9a9;
+    text-align: center;
+    font-size: 60px;
+    font-family: cursive, sans-serif;
+}
+
+#answer{
+    width: 200px;
+    height: 40px;
+    background-color: #b3ef7a;
+    border-radius: 10px;
+    margin: 0px 200px;
+    box-shadow: 0px 3px 10px 0px #2bb9a9;
+    text-align: center;
+    line-height: 40px;
+    font-weight: bold;
+}
+
+#options{
+    width: 400px;
+    height: 70px;
+    margin: 10px auto;
+}
+
+.option{
+    height: 70px;
+    width: 80px;
+    float:left;
+    background-color: cornsilk;
+    margin-top: 5px;
+    margin-right: 26px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 1px 0px 2px #aace9b;
+    text-align: center;
+    line-height: 70px;
+    font-family: cursive, sans-serif;
+    font-size: 30px;
+    position: relative;
+}
+
+.option:hover{
+    background-color: #98e976;
+    color: azure;
+}
+
+.option:active{
+    box-shadow: 0px 0px 0px 0px #aace9b;
+    top: 1px;
+}
+
+#option4{
+    margin-right: 0px;
+}
+
+#start{
+    width: 110px;
+    height: 35px;
+    background-color: aqua;
+    margin: 30px auto;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 8px;
+    box-shadow: 0px 3px 0px 0px #0dc3a2;
+    cursor: pointer;
+    color: #145643;
+    position: relative;
+    clear: both;
+}
+
+#start:hover{
+    background-color: darkgray;
+    box-shadow: 0px 3px 0px 0px #414133;
+    color: white;
+}
+
+#start:active{
+    box-shadow: 0px 0px 0px 0px #414133;
+    top: 3px;
+}
+
+#reset{
+    width: 110px;
+    height: 35px;
+    background-color: red;
+    top: 390px;
+    left: 265px;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 8px;
+    box-shadow: 0px 3px 0px 0px #6b0e0e;
+    cursor: pointer;
+    color: white;
+    position: absolute;
+    visibility: hidden;
+}
+
+#reset:hover{
+    background-color: darkgray;
+    box-shadow: 0px 3px 0px 0px #414133;
+    color: white;
+}
+
+#reset:active{
+    box-shadow: 0px 0px 0px 0px #414133;
+    top: 393px;
+}
+
+#time{
+    width: 175px;
+    height: 35px;
+    background-color: #b3ef7a;
+    border-radius: 10px;
+    position: absolute;
+    top: 390px;
+    left: 450px;
+    box-shadow: 0px 3px 10px 0px #2bb9a9;
+    text-align: center;
+    line-height: 40px;
+    color: dimgrey;
+    visibility: hidden;
+}
+
+#gameover{
+    height: 200px;
+    width: 500px;
+    text-align: center;
+    background: linear-gradient(#1be863, #23c197);
+    color: white;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    position: absolute;
+    top: 160px;
+    left: 45px;
+    z-index: 2;
+    visibility: hidden;
+}

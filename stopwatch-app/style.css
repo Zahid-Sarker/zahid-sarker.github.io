@@ -1,0 +1,93 @@
+body {
+    background: url(images/tree.jpg) center center fixed;
+    background-size: cover;
+}
+
+.container-fluid {
+    color: #fff;
+}
+
+h1 {
+    font-size: 6vw;
+    text-align: center;
+    color: #a9a9f3;
+}
+
+#laptime {
+    text-align: right;
+    font-size: 2vw;
+}
+
+#time {
+    text-align: center;
+    font-size: 8vw;
+    margin-bottom: 0px;
+}
+
+.button {
+    background-color: #4a4a81;
+    height: 15vw;
+    width: 15vw;
+    border-radius: 100%;
+    text-align: center;
+    padding-top: 5vw;
+    font-weight: bold;
+    font-size: 3vw;
+    cursor: pointer;
+    color: aliceblue;
+}
+
+.button:hover {
+    background-color: #4a4a81;
+    opacity: 0.7;
+}
+
+
+#stop, #reset, #resume {
+    display: none;
+}
+
+#lapRecord {
+    margin-top: 20px;
+    height: 40vw;
+    overflow-y: scroll;
+    display: none;
+}
+
+
+
+@media(max-width: 600px) {
+    .button {
+        background-color: #4a4a81;
+        height: 20vw;
+        width: 20vw;
+        border-radius: 100%;
+        text-align: center;
+        padding-top: 7vw;
+        font-weight: bold;
+        font-size: 4vw;
+        cursor: pointer;
+        color: aliceblue;
+        margin-right: 10vw;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
