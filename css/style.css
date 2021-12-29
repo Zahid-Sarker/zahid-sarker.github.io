@@ -112,6 +112,11 @@ body {
     background: var(--hover-color);
 }
 
+.highlight-text {
+    color: red;
+    font-weight: bold;
+}
+
 /* .container .project1 button {
     display: block;
     padding: 10px;
@@ -196,4 +201,61 @@ footer a:hover {
 .credit-detail li {
     list-style: circle;
     margin-top: 10px;
+}
+
+/* Blood bank page */
+#blood-bank-body {
+    padding: 20px;
+    background: #333;
+    height: 100vh;
+    color: #fff;
+}
+
+.blood-header {
+    color: rgb(145, 43, 43);
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: cursive, sans-serif;
+}
+
+#blood-bank-body h3 {
+    margin: 10px 0;
+}
+
+#blood-bank-body a {
+    color: red;
+    border-bottom: 3px solid rgb(145, 43, 43);;
+    font-size: 20px;
+}
+
+#blood-bank-body a:hover{
+    color: rgb(145, 43, 43);
+    border-bottom: 3px dotted red;
+    transition: all 1s;
+}
+
+.code {
+    border: 1px solid #f0f0f0;
+    padding: 10px 10px;
+    margin: 10px 0;
+    border-radius: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.video {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #f0f0f0;
+    border-radius: 20px 20px 0 0;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.video h3 {
+    text-align: center;
+}
+
+.video iframe {
+    width: 100%;
 }
