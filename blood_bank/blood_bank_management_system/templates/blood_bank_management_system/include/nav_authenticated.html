@@ -1,0 +1,16 @@
+<div class="nav">
+    <div class="logo">
+        <h1><a href="{% url 'index' %}"><span class="blood">Blood</span>Bank</a></h1>
+        {% load static %}
+        <a class="mx-1" href="{% url 'index' %}"><img src="{% static 'blood_bank_management_system/images/logo.png/' %}" alt="Logo"></a>
+        <ul>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Notification</a></li>
+            <li><a href="#">Search</a></li>
+        </ul>
+    </div>
+    <ul>
+        <li><p>Welcome {{ request }}</p></li>
+        <li><a href={% url 'logout' %}>Log out</a></li>
+    </ul>
+</div>

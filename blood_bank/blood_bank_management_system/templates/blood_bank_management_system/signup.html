@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block title %}Blood Bank | Sign up{% endblock title %}
+{% block css %}
+{% load static %}
+<link rel='stylesheet' href="{% static 'blood_bank_management_system/style.css' %}">
+{% endblock css %}
+
+{% block body %}
+<header>
+    {% include 'blood_bank_management_system/include/nav.html' %}
+</header>
+<section id="signup">
+    <h1>Sign up</h1>
+    <div class="signup-card">
+        <form method="POST" action="">
+            {% csrf_token %}
+            {% for field in form %}
+                <p>{{ field.label }}<p>
+                <p>{{ field }}</p>
+                <p>{{ field.errors }}</p>
+            {% endfor %}
+            <input type="submit" value="Register">
+        </form>
+    </div>
+</section>
+{% endblock body%}

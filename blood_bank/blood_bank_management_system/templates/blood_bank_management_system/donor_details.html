@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% block title %}Blood Bank | Donor - {{ donor.name }}{% endblock title %}
+{% block css %}
+{% load static %}
+<link rel='stylesheet' href="{% static 'blood_bank_management_system/style.css' %}">
+{% endblock css %}
+
+{% block body %}
+<header>
+    {% include 'blood_bank_management_system/include/nav.html' %}
+</header>
+
+<div class="donor-detail-container">
+    <h1>Donor details - {{ donor.name }}</h1>
+    <div class="donor-detail-card">
+        <table>
+            <tr>
+                <td>Name </td>
+                <td> &nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp; </td> 
+                <td>{{ donor.name | title }}</td>
+            </tr>
+            <tr>
+                <td>Blood group </td>
+                <td> &nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp; </td> 
+                <td>{{ donor.blood_group }}</td>
+            </tr>
+            <tr>
+                <td>Gender </td>
+                <td> &nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp; </td> 
+                <td>{{ donor.gender | title }}</td>
+            </tr>
+            <tr>
+                <td>Age </td>
+                <td> &nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp; </td> 
+                <td>{{ donor.age }}</td>
+            </tr>
+            <tr>
+                <td>Email </td>
+                <td> &nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp; </td> 
+                <td>{{ donor.email }}</td>
+            </tr>
+            <tr>
+                <td>Location </td>
+                <td> &nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp; </td>    
+                <td>{{ donor.location | title }}</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+{% endblock body%}

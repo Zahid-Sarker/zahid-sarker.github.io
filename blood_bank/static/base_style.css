@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+header a {
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* Utility class */
+.m-1 {
+    margin: 10px;
+}
+.m-2 {
+    margin: 20px;
+}
+.m-3 {
+    margin: 30px;
+}
+.m-4 {
+    margin: 40px;
+}
+
+.p-1 {
+    padding: 10px;
+}
+.p-2 {
+    padding: 20px;
+}
+.p-3 {
+    padding: 30px;
+}
+.p-4 {
+    padding: 40px;
+}
+
+.mx-1 {
+    margin: 0 10px;
+}
+.mx-2 {
+    margin: 0 20px;
+}
+.mx-3 {
+    margin: 0 30px;
+}
+.mx-4 {
+    margin: 0 40px;
+}
+
+.my-1 {
+    margin: 10px 0;
+}
+.my-2 {
+    margin: 10px 0;
+}
+.my-3 {
+    margin: 10px 0;
+}
+.my-4 {
+    margin: 10px 0;
+}
+
+.px-1 {
+    padding: 0 10px;
+}
+.px-2 {
+    padding: 0 20px;
+}
+.px-3 {
+    padding: 0 30px;
+}
+.px-4 {
+    padding: 0 40px;
+}
+
+.py-1 {
+    padding: 10px 0;
+}
+.py-2 {
+    padding: 10px 0;
+}
+.py-3 {
+    padding: 10px 0;
+}
+.py-4 {
+    padding: 10px 0;
+}
+
+/* Fonts */
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: #202124;
+}
+
+
+
+

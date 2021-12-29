@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block title %}Blood Bank | About{% endblock title %}
+{% block css %}
+{% load static %}
+<link rel='stylesheet' href="{% static 'blood_bank_management_system/style.css' %}">
+{% endblock css %}
+
+{% block body %}
+<header>
+    {% include 'blood_bank_management_system/include/nav.html' %}
+</header>
+<section id="about">
+    <h1>About</h1>
+    <p>This project was created as a requirement of <span class="cse310">CSE310:Object Oriented Programming</span> course of Brac University.
+    </p>
+</section>
+{% endblock body%}

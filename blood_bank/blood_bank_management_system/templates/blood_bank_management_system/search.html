@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block title %}Blood Bank | Search{% endblock title %}
+{% block css %}
+{% load static %}
+<link rel='stylesheet' href="{% static 'blood_bank_management_system/style.css' %}">
+{% endblock css %}
+
+{% block body %}
+<header>
+    {% include 'blood_bank_management_system/include/nav.html' %}
+</header>
+
+<h1 class='search-header'>Search Donor</h1>
+
+<section id="search-body">
+    {% include 'blood_bank_management_system/include/searchbar.html' %}
+</section>
+
+<section id="sign-up-buttons">
+    <button><a href='{% url 'become-donor' %}'>Become donor</a></button>
+</section>
+
+{% endblock body %}

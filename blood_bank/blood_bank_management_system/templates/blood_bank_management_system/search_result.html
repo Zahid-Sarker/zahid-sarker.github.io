@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+{% block title %}Blood Bank | Search result{% endblock title %}
+{% block css %}
+{% load static %}
+<link rel='stylesheet' href="{% static 'blood_bank_management_system/style.css' %}">
+{% endblock css %}
+
+{% block body %}
+<header>
+    {% include 'blood_bank_management_system/include/nav.html' %}
+</header>
+
+<section id='small-search-bar'>
+    <form action="" method="POST">
+        {% csrf_token %}
+        <div class="small-search-bar-container">
+    
+        <div>
+            <p><label for="blood">Blood Group</label></p>
+            <select name="blood" id="blood">
+                <option value="O+" selected>O+</option>
+                <option value="A+">A+</option>
+                <option value="O-">O-</option>
+                <option value="B+">B+</option>
+                <option value="A-">A-</option>
+                <option value="AB+">AB+</option>
+                <option value="B-">B-</option>
+                <option value="AB-">AB-</option>
+            </select>
+        </div>
+    
+        <div>
+            <p><label for="gender">Gender</label></p>
+            <select name="gender" id="gender">
+                <option value="male" selected>Male</option>
+                <option value="female">Female</option>
+                <option value="any">Any</option>
+                <option value="others">Prefer not to say</option>
+            </select>
+        </div>
+    
+        <div>
+            <p><label for="location">Location</label></p>
+            <input type="text" placeholder="Optional" name='location'>
+        </div>
+    
+        <div>
+            <br>
+            <input type="submit" value="Search">
+        </div>
+    
+        </div>
+    </form>
+</section>
+<section id="search-result">
+    <h1>Search Result</h1>
+    <div>
+    {% for donor in donors %}
+        <p>
+            <a href="{% url 'donor-details' donor.id %}">{{ donor }}</a>
+            <a href="{% url 'donor-details' donor.id %}" class="details-btn">Details</a>
+        </p>
+    {% endfor %}
+    </div>
+</section>
+{% endblock body%}

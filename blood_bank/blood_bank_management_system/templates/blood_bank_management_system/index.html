@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% block title %}Blood Bank | Home{% endblock title %}
+{% block css %}
+{% load static %}
+<link rel='stylesheet' href="{% static 'blood_bank_management_system/style.css' %}">
+{% endblock css %}
+
+{% block body %}
+<header>
+    {% include 'blood_bank_management_system/include/nav.html' %}
+</header>
+
+{% for message in messages %}
+    <p id='login-message'>{{ message }}</p>
+{% endfor %}
+
+<section id="main-body">
+    <div class="left">
+        <h3>
+            Why?
+        </h3>
+        <div class="left-container">
+            <p>
+            
+            There is a constant need for a regular supply of blood because it can be stored only for a limited period of time before use. Regular blood donation by a sufficient number of healthy people is needed to ensure that blood will always be available whenever and wherever it is needed.
+            <br><br>
+            Blood is the most precious gift that anyone can give to another person – the gift of life. A decision to donate your blood can save a life, or even several if your blood is separated into its components – red cells, platelets and plasma – which can be used individually for patients with specific conditions. 
+            <a class='link' href="https://www.who.int/news-room/questions-and-answers/item/blood-products-why-should-i-donate-blood#:~:text=Why%20should%20people%20donate%20blood,Safe%20blood%20saves%20lives.&text=A%20decision%20to%20donate%20your,for%20patients%20with%20specific%20conditions." target="_blank">More info</a>
+            </p>
+            
+            <img src="{% static 'blood_bank_management_system/images/why.png' %}" alt='Why-picture'>
+        </div>
+    </div>
+    <div class="right">
+        <h3>How this works</h3>
+        <div class="right-container">
+            <img src="{% static 'blood_bank_management_system/images/how.png' %}" alt='How-this-works-picture'>
+            <p>
+            This is an online blood bank management system. This can be used by hospitals, blood donation organizations or even as a national database to store information of blood donors centrally.<br><br>
+            After signing up, user can register as a donor. The search result will show all the available donors based on the search criteria and donor's informations can be seen after selecting a particular donor based on the search result.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="sign-up-buttons">
+    {% if user.is_authenticated %}
+        <button><a href='{% url 'become-donor' %}'>Become donor</a></button>
+    {% else %}
+        <button><a href="{% url 'signup' %}">Sign up</a></button>
+        <button><a href="{% url 'login' %}">Log in</a></button>
+    {% endif %}
+</section>
+{% endblock body %}

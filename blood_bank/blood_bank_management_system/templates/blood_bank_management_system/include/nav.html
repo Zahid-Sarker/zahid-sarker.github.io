@@ -1,0 +1,28 @@
+<div class="nav">
+    <div class="logo">
+        <h1><a href="{% url 'index' %}"><span class="blood">Blood</span>Bank</a></h1>
+        {% load static %}
+        <a class="mx-1" href="{% url 'index' %}"><img src="{% static 'blood_bank_management_system/images/logo.png/' %}" alt="Logo"></a>
+        
+        {% if user.is_authenticated %}
+            <ul>
+                <li><a href="{% url 'profile' %}">Profile</a></li>
+                <li><a href="#">Notification</a></li>
+                <li><a href="{% url 'search' %}">Search</a></li>
+            </ul>
+        {% endif %}
+    </div>
+    <ul>
+        {% if user.is_authenticated %}
+            <li id='welcome'><p>Welcome <strong>{{ user.first_name }}</strong></p></li>
+            <li><a href="{% url 'logout' %}">Logout</a></li>
+        {% else %}
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'about' %}">About</a></li>
+            <li><a href={% url 'signup' %}>Sign up</a></li>
+            <li><a href={% url 'login' %}>Log in</a></li>
+        {% endif %}
+    </ul>
+</div>
+
+<!-- For non-authenticated users -->

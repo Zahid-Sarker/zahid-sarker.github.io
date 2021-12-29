@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block title %}Blood Bank | Log in{% endblock title %}
+{% block css %}
+{% load static %}
+<link rel='stylesheet' href="{% static 'blood_bank_management_system/style.css' %}">
+{% endblock css %}
+
+{% block body %}
+<header>
+    {% include 'blood_bank_management_system/include/nav.html' %}
+</header>
+<section id="login">
+    <h1>Log in</h1>
+    <div class="login-card">
+        <form action="" method="POST">
+            {% csrf_token %}
+            <label for="username">Username</label>
+            <input type="text" name="username" required id="username">
+            <label for="password">Password</label>
+            <input type="password" name="password" required id="password">
+            {% for message in messages %}
+                <p id='messages'>{{ message }}</p>
+            {% endfor %}
+            <input type="submit" value="Login">
+            <p>Don't have an account? <a href="{% url 'signup' %}">Sign up</a></p>
+        </form>
+    </div>
+</section>
+{% endblock body%}
