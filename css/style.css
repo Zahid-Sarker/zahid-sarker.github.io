@@ -220,11 +220,11 @@ footer a:hover {
 
 #blood-bank-body a {
     color: red;
-    border-bottom: 3px solid rgb(145, 43, 43);;
+    border-bottom: 3px solid rgb(145, 43, 43);
     font-size: 20px;
 }
 
-#blood-bank-body a:hover{
+#blood-bank-body a:hover {
     color: rgb(145, 43, 43);
     border-bottom: 3px dotted red;
     transition: all 1s;
@@ -254,4 +254,41 @@ footer a:hover {
 
 .video iframe {
     width: 100%;
+}
+
+/* Codes */
+#source-code-container {
+    color: rgb(206, 191, 191);
+}
+
+.source-code {
+    border: 1px solid #e3e3e3;
+    border-radius: 3px;
+    margin: 0 200px;
+    padding: 10px;
+}
+
+.codes{
+    text-align: center;
+    color: crimson;
+}
+
+.source-code-header {
+    margin: 10px 0 0 200px;
+    color: rgb(15, 13, 13);
+}
+
+#source-code-container a {
+    color: rgb(230, 132, 132);
+    font-size: 20px;
+}
+
+#source-code-container a:hover {
+    color: rgb(226, 64, 64);
+    border-bottom: 3px solid red;
+    transition: all 1s;
+}
+
+#source-code-container p {
+    margin-bottom: 5px;
 }
